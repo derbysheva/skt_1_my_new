@@ -147,10 +147,6 @@
     <ClInclude Include="Vector3.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Area.cpp" />
-    <ClCompile Include="Cell.cpp" />
-    <ClCompile Include="Inverse.cpp" />
-    <ClCompile Include="Receiver.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -3,7 +3,7 @@
 #include "Cell.h"
 #include "Inverse.h"
 #include "Receiver.h"
-#include "Vector3.h"
+//#include "Vector3.h"
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -25,6 +25,7 @@ int main() {
 		fout << cur_area.B[i].x << "\t" << cur_area.B[i].y << " " << cur_area.B[i].z << endl;
 	}
 	fout.close();
+
 	//inverse
 	Area inv_area;
 	inv_area.generate("area.txt");
