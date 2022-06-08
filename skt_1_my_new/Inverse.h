@@ -23,19 +23,6 @@ public:
 	int K, N;
 	vector<double> p;
 
-	//Inverse(Area& cur_area, Receiver& cur_rec);
-	//void input(const string& fn_area, const string& fn_receivers, const string& fn_config);
-	//void calc();
-	//void solve(vector<vector<double>>& A_c);
-	//void make_L();
-	//void make_A();
-	//void make_B();
-	//double find_best_alpha();
-	//void add_alpha(double alp, vector<vector<double>>& A_c);
-	//vector<vector3> find_best_gamma();
-	//void add_gamma(vector<vector3> gam, vector<vector<double>>& A_c);
-	//void regularization();
-
 	Inverse(Area& cur_area, Receiver& cur_rec)
 	{
 		ifstream fin("regularization.txt");

@@ -12,7 +12,7 @@ public:
 	vector3 nodes[8], p, barycenter;
 	double mes;
 	vector<int> neighbors;
-	Cell() {};
+	Cell() { neighbors.resize(6); };
 
 	void init()
 	{

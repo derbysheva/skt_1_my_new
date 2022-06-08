@@ -82,22 +82,28 @@ public:
 
 					//правый сосед по х
 					if (cur_cube_num + 1 < (j + 1) * nx + k * nx * ny)
-						t.neighbors.push_back(cur_cube_num + 1);
+						//t.neighbors.push_back(cur_cube_num + 1);
+						t.neighbors[0] = cur_cube_num + 1;
 					//левый сосед по х
 					if (cur_cube_num - 1 >= j * nx + k * nx * ny)
-						t.neighbors.push_back(cur_cube_num - 1);
+						//t.neighbors.push_back(cur_cube_num - 1);
+						t.neighbors[1] = cur_cube_num - 1;
 					//правый сосед по у
 					if (cur_cube_num + nx < (k + 1) * nx * ny)
-						t.neighbors.push_back(cur_cube_num + nx);
+						//t.neighbors.push_back(cur_cube_num + nx);
+						t.neighbors[2] = cur_cube_num + nx;
 					//левый сосед по y
 					if (cur_cube_num - nx >= k * nx * ny)
-						t.neighbors.push_back(cur_cube_num - ny);
+						//t.neighbors.push_back(cur_cube_num - ny);
+						t.neighbors[3] = cur_cube_num - ny;
 					//правый сосед по z
 					if (cur_cube_num + nx * ny < K)
-						t.neighbors.push_back(cur_cube_num + nx * ny);
+						//t.neighbors.push_back(cur_cube_num + nx * ny);
+						t.neighbors[4] = cur_cube_num + nx * ny;
 					//левый сосед по z
 					if (cur_cube_num - nx * ny >= 0)
-						t.neighbors.push_back(cur_cube_num - nx * ny);
+						//t.neighbors.push_back(cur_cube_num - nx * ny);
+						t.neighbors[5] = cur_cube_num - nx * ny;
 
 					t.p = vector3(0, 0, 0);
 					cells.push_back(t);//все разбиения
