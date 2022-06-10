@@ -21,8 +21,11 @@ int main() {
 
 	ofstream fout;
 	fout.open("direct_out.txt");
+	//for (int i = 0; i < cur_area.B.size(); i++) {
+	//	fout << cur_rec.coords_rec[i].x << "\t" << cur_area.B[i].x << "\t" << cur_area.B[i].y << "\t" << cur_area.B[i].z << endl;
+	//}
 	for (int i = 0; i < cur_area.B.size(); i++) {
-		fout << cur_rec.coords_rec[i].x << "\t" << cur_area.B[i].x << "\t" << cur_area.B[i].y << "\t" << cur_area.B[i].z << endl;
+		fout << cur_area.B[i].x << "\t" << cur_area.B[i].y << "\t" << cur_area.B[i].z << endl;
 	}
 	fout.close();
 
@@ -33,7 +36,7 @@ int main() {
 	Inverse cur_inv(inv_area, cur_rec);
 
 	//ðåãóëÿðèçàöèÿ
-	cur_inv.regular_case = 1;
+	//cur_inv.regular_case = 1;
 	cur_inv.regularization();
 
 	//ÐÅØÅÍÈÅ ÑËÀÓ
@@ -45,13 +48,7 @@ int main() {
 		inv_area.cells[i].p.z = cur_inv.p[3 * i + 2];
 	}
 
-	ofstream pFile("result_p.txt");
-	//for (int i = 0; i < cur_inv.p.size() / 3; i++) {
-	//	if (i % 9 == 0) pFile << endl; 
-	//	//px py pz
-	//	pFile << cur_inv.p[3 * i] << "\t" << cur_inv.p[3 * i + 1] << "\t" << cur_inv.p[3 * i + 2] << endl; 
-	//}
-	
+	ofstream pFile("result_p.txt");	
 	auto cell = inv_area.cells[0];
 	pFile << cell.p.x << "\t";
 	int gcounter = 1;

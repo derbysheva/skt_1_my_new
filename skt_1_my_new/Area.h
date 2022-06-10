@@ -16,12 +16,6 @@ public:
 	vector<vector3> B_new;
 	int K;  //количество ячеек
 
-	//vector3 get_B(vector3 point);
-	//double get_abs_B(vector3 point) const;
-	//void generate(const string& filename);
-	//void generate_anoms(const string& anomal);
-	//void direct(Receiver& cur_rec, vector<vector3>& B_cur);
-
 	vector3 get_B(vector3 point)
 	{
 		//общее В - сумма В по всем ячейкам

@@ -15,7 +15,7 @@ public:
 	vector<vector3> gamma;
 	double gamma_first = 1e-15;
 	double alpha_first = 1e-15;
-	double gamma_diff = 1e-5;  // Критерий близости к нулю
+	double gamma_diff = 1e-7;  // Критерий близости к нулю
 
 	vector<vector<double> > A, A_cur;
 	vector<double> b;

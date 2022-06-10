@@ -12,10 +12,6 @@ public:
 	int n_pr;//число профилей
 	double x_rec_max, x_rec_min, y_rec_min, y_rec_max, z_rec; //координаты линии приемников
 
-	//void read_count(string& filename);
-	//void generate(string& filename, string& outfile); // сгенерировали координаты приёмников
-	//void read_coord(string& filename); //считали координаты всех приёмников из файла
-
 	void read_count(const string& filename)
 	{
 		ifstream fin(filename);
