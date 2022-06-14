@@ -12,17 +12,18 @@ public:
 	int n_pr;//число профилей
 	double x_rec_max, x_rec_min, y_rec_min, y_rec_max, z_rec; //координаты линии приемников
 
-	void read_count(const string& filename)
-	{
-		ifstream fin(filename);
-		fin >> n_pr >> n_rec; //число профилей, число приемников
-		fin.close();
-	}
+	//void read_count(const string& filename)
+	//{
+	//	ifstream fin(filename);
+	//	fin >> n_pr >> n_rec; //число профилей, число приемников
+	//	fin.close();
+	//}
 	void generate(const string& filename, const string& outfile) // сгенерировали координаты приёмников
 	{
 		ifstream fin(filename);
 		ofstream fout(outfile);
 
+		fin >> n_pr >> n_rec; //число профилей, число приемников
 		fin >> x_rec_min >> x_rec_max >> y_rec_min >> y_rec_max >> z_rec;
 		double hxr = (x_rec_max - x_rec_min) / (n_rec - 1.);
 		double hyp = (y_rec_max - y_rec_min) / (n_pr - 1.);

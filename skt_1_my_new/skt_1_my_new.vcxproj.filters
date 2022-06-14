@@ -43,9 +43,12 @@
     <Text Include="area.txt" />
     <Text Include="anoms.txt" />
     <Text Include="receivers_n.txt" />
-    <Text Include="receivers_min_max.txt" />
+    <Text Include="receivers_n_min_max.txt" />
     <Text Include="receivers_coord.txt" />
     <Text Include="direct_out.txt" />
     <Text Include="result_p.txt" />
+    <Text Include="cells_mesh.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

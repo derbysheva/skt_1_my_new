@@ -15,6 +15,7 @@ public:
 	vector<vector3> B;
 	vector<vector3> B_new;
 	int K;  //количество €чеек
+	int nx, ny, nz;
 
 	vector3 get_B(vector3 point)
 	{
@@ -31,7 +32,7 @@ public:
 	{
 		ifstream fin(filename);
 		double x1, x2, y1, y2, z1, z2; // границы области
-		int nx, ny, nz; // количество €чеек
+		//int nx, ny, nz; // количество €чеек
 		fin >> x1 >> x2 >> nx;
 		fin >> y1 >> y2 >> ny;
 		fin >> z1 >> z2 >> nz;
